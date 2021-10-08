@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -9,11 +10,16 @@ import (
 	"github.com/TechBowl-japan/go-stations/db"
 )
 
+func handler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprint(w, "test")
+}
 func main() {
 	err := realMain()
 	if err != nil {
 		log.Fatalln("main: failed to exit successfully, err =", err)
 	}
+	http.HandleFunc("/", handler)
+	http.ListenAndServe(":8080", nil)
 }
 
 func realMain() error {
@@ -48,7 +54,6 @@ func realMain() error {
 	defer todoDB.Close()
 
 	// set http handlers
-	mux := http.NewServeMux()
 
 	// TODO: ここから実装を行う
 
