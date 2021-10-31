@@ -3,11 +3,11 @@ package model
 type (
 	// A TODO expresses ...
 	TODO struct {
-		id          int
-		subject     string
-		description string
-		created_at  string
-		updated_at  string
+		Id          int
+		Subject     string
+		Description string
+		Created_at  string
+		Updated_at  string
 	}
 
 	// A CreateTODORequest expresses ...
