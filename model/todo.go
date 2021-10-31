@@ -14,8 +14,8 @@ type (
 
 	// A CreateTODORequest expresses ...
 	CreateTODORequest struct {
-		Subject     string
-		Description string
+		subject     string
+		description string
 	}
 	// A CreateTODOResponse expresses ...
 	CreateTODOResponse struct {
