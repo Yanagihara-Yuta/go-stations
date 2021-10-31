@@ -1,6 +1,8 @@
 package model
 
-import "time"
+import (
+	"time"
+)
 
 type (
 	// A TODO expresses ...
@@ -21,7 +23,7 @@ type (
 	CreateTODOResponse struct {
 		Description string
 		Subject     string
-		TODO        struct.ptr
+		TODO        string
 	}
 
 	// A ReadTODORequest expresses ...
