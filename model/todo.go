@@ -21,7 +21,7 @@ type (
 	CreateTODOResponse struct {
 		Description string
 		Subject     string
-		TODO        string
+		TODO        struct.ptr
 	}
 
 	// A ReadTODORequest expresses ...
