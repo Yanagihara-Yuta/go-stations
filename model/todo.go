@@ -21,6 +21,7 @@ type (
 	CreateTODOResponse struct {
 		Description string
 		Subject     string
+		TODO        []string
 	}
 
 	// A ReadTODORequest expresses ...
