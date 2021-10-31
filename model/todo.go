@@ -22,7 +22,7 @@ type (
 	// A CreateTODOResponse expresses ...
 	CreateTODOResponse struct {
 		Description string
-		Subject     int
+		Subject     string
 		TODO
 	}
 
