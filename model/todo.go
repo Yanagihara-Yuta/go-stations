@@ -14,8 +14,8 @@ type (
 
 	// A CreateTODORequest expresses ...
 	CreateTODORequest struct {
-		Subject     string `"json:subject"`
-		Description string `"json:discription"`
+		Subject     string `json:"subject"`
+		Description string `json:"discription"`
 	}
 	// A CreateTODOResponse expresses ...
 	CreateTODOResponse struct {
