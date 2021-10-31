@@ -23,7 +23,7 @@ type (
 	CreateTODOResponse struct {
 		Description string
 		Subject     string
-		TODO
+		TODO        `json:"array"`
 	}
 
 	// A ReadTODORequest expresses ...
