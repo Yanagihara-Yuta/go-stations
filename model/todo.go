@@ -2,7 +2,13 @@ package model
 
 type (
 	// A TODO expresses ...
-	TODO struct{}
+	TODO struct {
+		id          int
+		subject     string
+		description string
+		created_at  string
+		updated_at  string
+	}
 
 	// A CreateTODORequest expresses ...
 	CreateTODORequest struct{}
