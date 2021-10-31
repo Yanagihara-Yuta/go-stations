@@ -6,8 +6,8 @@ type (
 		ID          int
 		Subject     string
 		Description string
-		CreatedAt   string
-		UpdatedAt   string
+		CreatedAt   float64
+		UpdatedAt   float64
 	}
 
 	// A CreateTODORequest expresses ...
